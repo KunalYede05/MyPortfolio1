@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="Port.css">
+    <script src="https://kit.fontawesome.com/9fb5c598c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="sidemenu">
+                <img src="./Kun l-1.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Kunal</span> Yede</h1><br>
+            </div>
+            <h5>As a Full Stack developer,<br>I'm passionate about
+               creating exceptional digital experiences<br>that help 
+               businesses achieve their goals.I'm proficient in web <br> development and have
+               an impressive portfolio that showcases<br> my abilities. From startups to large corporations,
+               I have the<br> skills and knowledge to elevate any digital project.</h5>
+        </div>
+    </div>
+    <!-- ---------About--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="./user.png"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hi I'm Kunal
+                        A Full Stack software developer, <br>passionate about building excellent software that improves
+                        the lives of those around me. <br>
+                        Want to work in Challenging Environment To Showcase My Knowledge and Creativity.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/app Interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <!-- <li><span>App Development</span><br>Developing Android App</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Full Stack Developer training at Qspider Pune</li>
+                            <li><span>2022</span><br>BE From PRMIT&R Amravati</li>
+                            <li><span>2018</span><br>HSC From HGT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Software Development Training at Pune</li>
+                            <li><span>2019-2021</span><br>Sales & Marketing Role</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1><br>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>provides you with a customized website design that's perfect for your business or personal site.
+                    </p> <br>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Our expertise in User Experience Design (UX) has enabled us to simplify and enhance the
+                        interaction between our clients target customers and their digital presence.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-adn"></i>
+                    <h2>Backend Developer</h2>
+                    <p>Provide you a clean and understandable code with proper app functionality for Your Valuable Customer</p><br>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./work-1.png" id="img1">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Weather app showing the current weather condition like teamperature, humidity, wind speed <br>
+                           <strong>Technologies Used :</strong> Java, Html, css, JavaScrit, jsp, servlet, Open weather API
+                        </p>
+                        <a href="https://github.com/KunalYede05/WeatherApp-Java"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./pngtree-fresh-and-simple-mobile-phone-app-login-page-picture-image_518395.jpg" id="img2">
+                    <div class="layer">
+                        <h3>Fancy Login Forms</h3>
+                        <p>Login form is the first Interaction of any site with User. Checkout the Login Forms</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work-2.png" id="img2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Listen the best song according to Your Music taste, favourite Artist and Mood.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------contact------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kunaloff2000@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9112343877</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kunal-yede-726b05225/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Kunal_Yede_SoftwareDeveloper_Fresher.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents')
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right="0";
+        }
+        function closemenu() {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyNRqlmcdmBrF10cUrdg9SQ_lVezhebpJwmWUaihBAzf2IgeSEegniSJ-LiBcQyRq0j/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=''
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html> 
